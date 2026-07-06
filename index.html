@@ -32,13 +32,12 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
     <meta name="format-detection" content="telephone=no, email=no, address=no">
     <meta name="theme-color" content="#8c00ff">
     <meta name="msapplication-TileColor" content="#8c00ff">
-    <meta name="msapplication-TileImage" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238c00ff'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E">
-
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238c00ff'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238c00ff'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238c00ff'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%238c00ff'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E">
+    <meta name="msapplication-TileImage" content="favicon.png">
+  <!-- ===== FAVICON ===== -->
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 
     <!-- ===== OPEN GRAPH (Facebook / LinkedIn / WhatsApp) ===== -->
     <meta property="og:type" content="website">
@@ -59,10 +58,9 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
     <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%231a1a2e'/%3E%3Crect x='100' y='100' width='1000' height='430' rx='30' fill='%238c00ff'/%3E%3Ctext x='600' y='280' font-size='80' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial,sans-serif'%3ENEXUSS%3C/text%3E%3Ctext x='600' y='370' font-size='48' text-anchor='middle' fill='%2313d8d0' font-family='Arial,sans-serif'%3ESURESHOT%3C/text%3E%3Ctext x='600' y='440' font-size='32' text-anchor='middle' fill='%23cccccc' font-family='Arial,sans-serif'%3EIndia's No.1 Telegram Channel%3C/text%3E%3C/svg%3E">
     <meta name="twitter:image:alt" content="SURESHOT BY RAMPATIL Logo">
 
-    <!-- ===== CANONICAL / SEO ===== -->
     <link rel="canonical" href="https://t.me/+_qeG1WiZiEMwZWI9">
 
-    <!-- ===== PRELOAD / PERFORMANCE ===== -->
+   
     <link rel="dns-prefetch" href="//connect.facebook.net">
     <link rel="dns-prefetch" href="//t.">
     <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
@@ -106,7 +104,7 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
    
 
     <style>
-        /* ===== RESET & BASE ===== */
+       
         * {
             margin: 0;
             padding: 0;
@@ -310,10 +308,29 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
             }
         }
 
-        .logo img {
-    width: 120px;   /* Adjust as needed */
-    height: auto;
+       .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    border-radius: 50%;       
     display: block;
+}
+
+  .logo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: transparent;         
+    border: 8px solid #8c00ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 55px auto 40px;
+   
+    user-select: none;
+    box-shadow: 0 0 40px rgba(140, 0, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;              
 }
     </style>
 </head>
@@ -369,17 +386,15 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- ===== JAVASCRIPT – COUNTDOWN LOGIC ===== -->
-    <!-- ============================================================ -->
+   
     <script>
         (function() {
             'use strict';
 
             // ── CONFIG ──
-            const AUTO_REDIRECT_ENABLED = false; // set true to redirect after countdown
-            const REDIRECT_URL = 'https://t.me/+xfzi_3okr8Y0ZmVl';
-            const COUNTDOWN_SECONDS = 50; // countdown from 5 seconds
+            const AUTO_REDIRECT_ENABLED = false;
+            const REDIRECT_URL = 'https://t.me/+_qeG1WiZiEMwZWI9';
+            const COUNTDOWN_SECONDS = 8; 
 
             // ── DOM REFS ──
             const dEl = document.getElementById('d');
@@ -396,10 +411,7 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
             }
 
             function updateDisplay(secs) {
-                // For this demo, we only show seconds changing.
-                // Days, Hours, Minutes stay "00" unless you extend the logic.
-                // If you want a full countdown from e.g. 7 days, you'd need a target date.
-                // This keeps it simple: just seconds countdown.
+               
                 dEl.textContent = '00';
                 hEl.textContent = '00';
                 mEl.textContent = '00';
@@ -450,7 +462,7 @@ src="https://www.facebook.com/tr?id=37233242366289697&ev=PageView&noscript=1"
                 resetDisplay();
             }
 
-            // ── EXPOSE FOR DEBUG (optional) ──
+          
             window.__countdown = {
                 start: startCountdown,
                 stop: stopTimer,
